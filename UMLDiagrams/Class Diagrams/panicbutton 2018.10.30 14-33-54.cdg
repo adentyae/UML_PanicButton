@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="panicbutton">
+  <ClassDiagramComponents>
+    <Class name="Berita" package="panicbutton" visibility="public" xPosition="628.0" yPosition="479.0">
+      <Fields>
+        <Field name="idberita" type="int" visibility="package"/>
+        <Field name="judul" type="String" visibility="package"/>
+        <Field name="lokasi" type="String" visibility="package"/>
+        <Field name="isi" type="String" visibility="package"/>
+        <Field name="tglberita" type="String" visibility="package"/>
+        <Field name="img" type="String" visibility="package"/>
+        <Field name="user" type="User" visibility="package"/>
+        <Field name="kategori" type="KategoriBerita" visibility="package"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="getIdberita" returnType="int" visibility="public"/>
+        <Method name="setIdberita" returnType="void" visibility="public">
+          <Argument type="int" name="idberita"/>
+        </Method>
+        <Method name="getJudul" returnType="String" visibility="public"/>
+        <Method name="setJudul" returnType="void" visibility="public">
+          <Argument type="String" name="judul"/>
+        </Method>
+        <Method name="getLokasi" returnType="String" visibility="public"/>
+        <Method name="setLokasi" returnType="void" visibility="public">
+          <Argument type="String" name="lokasi"/>
+        </Method>
+        <Method name="getIsi" returnType="String" visibility="public"/>
+        <Method name="setIsi" returnType="void" visibility="public">
+          <Argument type="String" name="isi"/>
+        </Method>
+        <Method name="getTglberita" returnType="String" visibility="public"/>
+        <Method name="setTglberita" returnType="void" visibility="public">
+          <Argument type="String" name="tglberita"/>
+        </Method>
+        <Method name="getImg" returnType="String" visibility="public"/>
+        <Method name="setImg" returnType="void" visibility="public">
+          <Argument type="String" name="img"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="DetailKejadian" package="panicbutton" visibility="public" xPosition="159.0" yPosition="181.0">
+      <Fields>
+        <Field name="idkejadian" type="int" visibility="package"/>
+        <Field name="nama_kejadian" type="String" visibility="package"/>
+        <Field name="lokasi" type="String" visibility="package"/>
+        <Field name="lev_kejadian" type="String" visibility="package"/>
+        <Field name="tgl_kejadian" type="String" visibility="package"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="getIdkejadian" returnType="int" visibility="public"/>
+        <Method name="setIdkejadian" returnType="void" visibility="public">
+          <Argument type="int" name="idkejadian"/>
+        </Method>
+        <Method name="getNama_kejadian" returnType="String" visibility="public"/>
+        <Method name="setNama_kejadian" returnType="void" visibility="public">
+          <Argument type="String" name="nama_kejadian"/>
+        </Method>
+        <Method name="getLokasi" returnType="String" visibility="public"/>
+        <Method name="setLokasi" returnType="void" visibility="public">
+          <Argument type="String" name="lokasi"/>
+        </Method>
+        <Method name="getLev_kejadian" returnType="String" visibility="public"/>
+        <Method name="setLev_kejadian" returnType="void" visibility="public">
+          <Argument type="String" name="lev_kejadian"/>
+        </Method>
+        <Method name="getTgl_kejadian" returnType="String" visibility="public"/>
+        <Method name="setTgl_kejadian" returnType="void" visibility="public">
+          <Argument type="String" name="tgl_kejadian"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="KategoriBerita" package="panicbutton" visibility="public" xPosition="620.0" yPosition="79.0">
+      <Fields>
+        <Field name="idkategori" type="String" visibility="package"/>
+        <Field name="kategori" type="String" visibility="package"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="getIdkategori" returnType="String" visibility="public"/>
+        <Method name="setIdkategori" returnType="void" visibility="public">
+          <Argument type="String" name="idkategori"/>
+        </Method>
+        <Method name="getKategori" returnType="String" visibility="public"/>
+        <Method name="setKategori" returnType="void" visibility="public">
+          <Argument type="String" name="kategori"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Notifikasi" package="panicbutton" visibility="public" xPosition="876.0" yPosition="276.0">
+      <Fields>
+        <Field name="idnotifikasi" type="int" visibility="package"/>
+        <Field name="user" type="User" visibility="package"/>
+        <Field name="detailkejadian" type="DetailKejadian" visibility="package"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="getIdnotifikasi" returnType="int" visibility="public"/>
+        <Method name="setIdnotifikasi" returnType="void" visibility="public">
+          <Argument type="int" name="idnotifikasi"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="User" package="panicbutton" visibility="public" xPosition="1249.0" yPosition="205.0">
+      <Fields>
+        <Field name="iduser" type="String" visibility="package"/>
+        <Field name="nama_user" type="String" visibility="package"/>
+        <Field name="password" type="String" visibility="package"/>
+        <Field name="no_hp" type="String" visibility="package"/>
+        <Field name="alamat" type="String" visibility="package"/>
+        <Field name="email" type="String" visibility="package"/>
+        <Field name="lev_user" type="String" visibility="package"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="getIduser" returnType="String" visibility="public"/>
+        <Method name="setIduser" returnType="void" visibility="public">
+          <Argument type="String" name="iduser"/>
+        </Method>
+        <Method name="getNama_user" returnType="String" visibility="public"/>
+        <Method name="setNama_user" returnType="void" visibility="public">
+          <Argument type="String" name="nama_user"/>
+        </Method>
+        <Method name="getPassword" returnType="String" visibility="public"/>
+        <Method name="setPassword" returnType="void" visibility="public">
+          <Argument type="String" name="password"/>
+        </Method>
+        <Method name="getNo_hp" returnType="String" visibility="public"/>
+        <Method name="setNo_hp" returnType="void" visibility="public">
+          <Argument type="String" name="no_hp"/>
+        </Method>
+        <Method name="getAlamat" returnType="String" visibility="public"/>
+        <Method name="setAlamat" returnType="void" visibility="public">
+          <Argument type="String" name="alamat"/>
+        </Method>
+        <Method name="getEmail" returnType="String" visibility="public"/>
+        <Method name="setEmail" returnType="void" visibility="public">
+          <Argument type="String" name="email"/>
+        </Method>
+        <Method name="getLev_user" returnType="String" visibility="public"/>
+        <Method name="setLev_user" returnType="void" visibility="public">
+          <Argument type="String" name="lev_user"/>
+        </Method>
+      </Methods>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <HasRelation name="user" source="panicbutton.Berita" target="panicbutton.User" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="kategori" source="panicbutton.Berita" target="panicbutton.KategoriBerita" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="detailkejadian" source="panicbutton.Notifikasi" target="panicbutton.DetailKejadian" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="user" source="panicbutton.Notifikasi" target="panicbutton.User" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+  </ClassDiagramRelations>
+</ClassDiagram>
